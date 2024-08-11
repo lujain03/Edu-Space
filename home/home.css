@@ -1,0 +1,155 @@
+/* General styles for the entire page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styles for the hero section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+background: #3e356e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero, .scroll-container {
+    overflow: hidden;
+}
+
+
+/* Navigation bar styles */
+nav {
+    background: transparent;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* Logo styles */
+.logo {
+    width: 100px;
+}
+
+/* User profile picture styles */
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Profile menu container */
+.profile-menu-container {
+    position: relative;
+}
+
+/* Dropdown menu container styles */
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 10px;
+    background: #fff;
+}
+
+/* Submenu visible state */
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+/* Submenu content styles */
+.sub-menu {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+/* Submenu link styles */
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+}
+.sub-menu-link p {
+    width: 100%;
+}
+.sub-menu-link i {
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+/* Navigation links container styles */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* Navigation links styles */
+nav ul li {
+    margin: 10px 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #e5e5e5;
+}
+
+/* Spline container styles */
+.spline-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Styles for the scroll container */
+.scroll-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #8b83b9;
+    padding: 50px 0;
+}
+
+/* Styles for the iframe */
+.slider-iframe {
+    width: 80%;
+    height: 600px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

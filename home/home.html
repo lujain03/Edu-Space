@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your page description here">
+    <title>Profile</title>
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="profile.html"><img src="logo.png" class="logo" alt="Website Logo">
+            </a>
+
+            <ul>
+                <li><a href="profile.html">Home</a></li>
+                <li><a href="#">Features</a></li> 
+                <li><a href="#">About</a></li>
+                <li><a href="login signup page/form.html" >Login/Signup</a></li>
+            </ul>
+            <img src="images/profile_user.png" class="user-pic" alt="Profile Picture" onclick="toggleMenu()" aria-expanded="false">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                  
+                    <a href="/profilepage/profilepage.html" target="_blank" class="sub-menu-link">
+                        <i class='bx bxs-user'></i>           
+                        <p>Account settings</p>
+                        <span><i class='bx bx-right-arrow-alt'></i></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="spline-container">
+            <spline-viewer url="https://prod.spline.design/k8juEQ11TwGW10oA/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+    <div class="scroll-container">
+        <iframe src="/slider/slider.html" class="slider-iframe" frameborder="0"></iframe>
+    </div>
+
+    <script src="home.js"></script>
+
+</body>
+</html>
