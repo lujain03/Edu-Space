@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background styling */
+body {
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background */
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    left: -280px; /* Start off-screen */
+    transition: left 0.3s ease; /* Smooth transition for slide effect */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.sidebar .sidebar_menu {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Slightly lighter overlay */
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding-top: 60px; /* Adjusted for logo space */
+}
+
+.sidebar .sidebar_menu .logo {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar .sidebar_menu .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.sidebar .sidebar_menu .menu {
+    padding: 20px;
+}
+
+.sidebar .sidebar_menu .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar .sidebar_menu .menu i {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.sidebar .sidebar_menu .menu a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar .sidebar_menu .menu li:hover {
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar .sidebar_menu .social_media {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .sidebar_menu .social_media ul {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .sidebar_menu .social_media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.sidebar .sidebar_menu .social_media a:hover {
+    opacity: 1;
+    transition: all 0.2s linear;
+    transform: scale(1.01);
+}
+
+.sidebar #check {
+    display: none;
+}
+
+.sidebar .btn_one {
+    position: absolute;
+    left: 16px;
+    top: 20px;
+}
+
+.sidebar .btn_one i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar .btn_two {
+    position: absolute;
+    left: 240px;
+    top: 20px;
+}
+
+.sidebar .btn_two i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#check:checked ~ .sidebar {
+    left: 0; /* Slide in */
+}
+
+/* Main content styling */
+main {
+    margin-left: 280px; /* Leave space for the sidebar */
+    padding: 20px;
+    width: calc(100% - 280px); /* Full width minus sidebar */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+/* Video Grid */
+.video-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.video-info h5, .video-info p {
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    position: static;
+}

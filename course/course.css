@@ -1,0 +1,79 @@
+/* Background for the entire page */
+body {
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+.custom-navbar {
+    padding: 10px 20px;
+    background-color: transparent; /* Ensure the navbar is transparent */
+}
+
+.custom-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; /* Aligns the items to the left */
+}
+
+.custom-navbar li {
+    margin-right: 15px; /* Space between the items */
+}
+
+.custom-navbar a {
+    color: white; /* Set text color to white */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.custom-navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Description Section Styles */
+.description {
+    color: white;
+}
+
+.description h2 {
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Carousel Styles */
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: white; /* Set button background color to white */
+    color: black; /* Set button text color to black */
+    border: 1px solid black; /* Optional: Add a border to the button */
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0; /* Light grey for hover effect */
+    color: black; /* Ensure text remains black on hover */
+}
+
+/* Coming Soon Text Styles */
+.carousel-caption p.fs-5 {
+    font-size: 18px; /* Ensure consistent font size */
+    color: white; /* Text color for Coming Soon */
+    margin-top: 20px; /* Add some space above the text */
+}
