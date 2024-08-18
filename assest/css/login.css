@@ -54,6 +54,8 @@ body {
 .wrapper h1 {
     font-size: 36px; 
     margin: 20px;
+    text-shadow: 0 0 25px #FFF9C1;
+
 }
 
 /* Container for each input box */
@@ -67,11 +69,11 @@ body {
     width: 100%; /* Full width for responsiveness */
     height: 50px;
     background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.2); /* White border with transparency */
+    border: 2px solid rgb(137, 135, 135); /* White border with transparency */
     border-radius: 40px; /* Rounded corners */
     font-size: 16px;
     color: #ffffff;
-    padding: 0 38px 0 7px; /* Padding inside input */
+    padding: 0 30px 0 7px; /* Padding inside input */
     overflow: hidden;
     outline: none;
 }
@@ -79,6 +81,7 @@ body {
 /* Styling for input placeholders */
 .input-box input::placeholder {
     color: #ffffff;
+    padding-left: 10px;
 }
 
 /* Styling for icons inside input boxes */
@@ -89,6 +92,7 @@ body {
     transform: translateY(-50%);
     font-size: 20px;
     color: #ffffff;
+    padding-top: 10px;
 }
 
 /* Styling for the remember me and forget password section */
@@ -124,7 +128,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px;
-    background-color: #4e92a3;
+    background-color: #FFF9C1;
     color: #000000; 
     margin-bottom: 15px; 
 }

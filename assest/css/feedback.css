@@ -1,314 +1,128 @@
-/* Importing the 'Poppins' font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Importing Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-/* Global styles for all elements */
+/* Resetting default styles and setting global font family */
 * {
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
-    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
-    font-family: 'Poppins', sans-serif; /* Set the default font to 'Poppins' */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Container that holds the form */
-.container {
-    min-height: 100vh; /* Make sure the container takes up at least the full height of the viewport */
-    background: url("gg.jpg") no-repeat center center/cover; /* Background image covering the container */
-    display: flex; /* Flexbox layout for centering content */
-    justify-content: right; /* Align items to the right horizontally */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* General padding */
-    padding-right: 90px; /* Increased padding on the right */
-}
-
-/* Styles for the form inside the container */
-.container form {
-    width: 90%; /* Form width as a percentage of its container */
-    max-width: 420px; /* Maximum width of the form */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
-    backdrop-filter: blur(20px); /* Apply a blur effect to the background */
-    border-radius: 10px; /* Rounded corners for the form */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow around the form */
-    color: #ffffff; /* Set the text color to white */
-    position: relative; /* Relative positioning for absolute children */
-    transition: height 0.6s ease; /* Smooth transition for height changes */
-    overflow: hidden; /* Hide overflow content */
-    padding: 40px; /* Padding inside the form */
-}
-
-/* Styles for the form's heading */
-.container form h1 {
-    color: #ffffff; /* White text color */
-    font-weight: 600; /* Bold font weight */
-    text-align: center; /* Center-align the heading */
-    margin-bottom: 20px; /* Space below the heading */
-}
-
-/* Styles for input fields and textarea */
-.container form input, 
-.container form textarea {
-    width: 100%; /* Full width of the parent container */
-    padding: 10px; /* Padding inside the fields */
-    margin-bottom: 20px; /* Space below the fields */
-    border: none; /* No border */
-    border-bottom: 2px solid #e0e0e0; /* Subtle bottom border */
-    background: transparent; /* Transparent background */
-    color: #e0e0e0; /* Light gray text color */
-    font-size: 16px; /* Font size */
-}
-
-/* Placeholder text color for input and textarea */
-.container form input::placeholder, 
-.container form textarea::placeholder {
-    color: #b0b0b0; /* Light gray color for placeholder text */
-}
-
-/* Specific styles for the textarea */
-.container form textarea {
-    resize: none; /* Disable resizing */
-    height: 100px; /* Fixed height */
-}
-
-/* Styles for the form's subheading */
-.container form h4 {
-    color: #e0e0e0; /* Light gray text color */
-    font-weight: 400; /* Normal font weight */
-    margin-bottom: 10px; /* Space below the subheading */
-}
-
-/* Styles for the submit button */
-.container form #button {
-    width: 100px; /* Fixed width */
-    padding: 10px; /* Padding inside the button */
-    background: #4e92a3; /* Background color for the button */
-    color: #fff; /* White text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background 0.3s; /* Smooth transition for background color change */
-}
-
-/* Hover effect for the submit button */
-.container form #button:hover {
-    background: #863092; /* Darker blue background on hover */
-}
-.container {
-    font-size: 6px;
-    width: 40em;
-    height: 40em;
-    position: relative;
-}
-img {
-    height: 130%;
-    width: 130%;
-}
-.sun {
+/* Styling the body with a gradient background */
+body {
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background */
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container for the feedback form */
+.wrapper {
+    width: 90%; /* Responsive width */
+    max-width: 420px; /* Maximum width for larger screens */
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Adjusted shadow for blurred border effect */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: auto; /* Adjusted height for feedback form */
+}
+
+/* Feedback form box */
+.wrapper .form-box.feedback {
+    padding: 20px 40px;
+}
+
+/* Styling for the main heading */
+.wrapper h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-shadow: 0 0 25px #FFF9C1;
+
+}
+
+/* Styling for individual input boxes */
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px; /* Margin at the bottom */
+    margin-top: 7px;
+}
+
+/* Styling for input fields */
+.input-box input, .input-box textarea {
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* White border with transparency */
+    border-radius: 40px; /* Rounded corners */
+    font-size: 16px;
+    color: #ffffff;
+    padding: 15px; /* Padding inside input and textarea */
+    outline: none;
+}
+
+/* Specific styling for textarea (feedback box) */
+.input-box textarea {
+    height: 150px; /* Height for feedback textarea */
+    resize: none; /* Disable resizing */
+    border-radius: 40px; /* Slightly less rounded corners for textarea */
+}
+
+/* Styling for input placeholders */
+.input-box input::placeholder, .input-box textarea::placeholder {
+    color: #ffffff;
+}
+
+/* Styling for icons inside input boxes */
+.input-box i {
     position: absolute;
-    top: 15em;
-    left: 15em;
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    box-shadow: 0 0 3em rgb(255, 128, 0);
-    animation: orbit 50s linear infinite;
-}
-.mercury,
-.venus,
-.earth,
-.moon,
-.mars,
-.jupiter,
-.saturn,
-.uranus,
-.neptune,
-.pluto {
-    position: absolute;
-    border-style: solid;
-    border-color: white transparent transparent transparent;
-    border-width: 0.1em 0.1em 0 0;
-    border-radius: 50%;
-}
-.mercury {
-    top: 12.5em;
-    left: 12.5em;
-    width: 15em;
-    height: 15em;
-    animation: orbit 68.7s linear infinite;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
 }
 
-.venus {
-    top: 10em;
-    left: 10em;
-    width: 20em;
-    height: 20em;
-    animation: orbit 48.7s linear infinite;
+/* Adjust icon position for textarea */
+.input-box textarea + i {
+    top: 20px; /* Position icon closer to the top for textarea */
+    transform: none;
 }
 
-.earth {
-    top: 6em;
-    left: 6em;
-    width: 28em;
-    height: 28em;
-    animation: orbit 36.5s linear infinite;   
-}
-.moon {
-    top: 2em;
-    right: -1em;
-    width: 7em;
-    height: 7em; 
-    animation: orbit 2.7s linear infinite;
-}
-.mars {
-    top: 2em;
-    left: 2.5em;
-    width: 36em;
-    height: 36em;
-    animation: orbit 26.5s linear infinite;
-}
-.jupiter {
-    top: -2em;
-    left: -2em;
-    width: 45em;
-    height: 45em;
-    animation: orbit 21s linear infinite;
-}
-.saturn {
-    top: -7em;
-    left: -7em;
-    width: 55em;
-    height: 55em;
-    animation: orbit 17s linear infinite;
-}
-.uranus {
-    top: -12em;
-    left: -12em;
-    width: 65em;
-    height: 65em;
-    animation: orbit 19s linear infinite;
-}
-.neptune {
-    top: -17em;
-    left: -17em;
-    width: 75em;
-    height: 75em;
-    animation: orbit 15s linear infinite;
-}
-.pluto {
-    top: -22em;
-    left: -22em;
-    width: 85em;
-    height: 85em;
-    animation: orbit 18s linear infinite;
+/* Styling for the submit button */
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #FFF9C1;
+    color: #000000;
 }
 
-.mercury::before,
-.venus::before,
-.earth::before,
-.moon::before,
-.mars::before,
-.jupiter::before,
-.saturn::before,
-.uranus::before,
-.neptune::before,
-.pluto::before {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    animation: orbit 30s linear infinite;
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 100%; /* Adjusting width for smaller screens */
+    }
 }
-.mercury::before {
-    top: 1.5em;
-    right: 0.8em;
-    width: 2em;
-    height: 2em;
-    background-image: url('./images/mercury.png');
-    background-size: cover;
-}
-.venus::before {
-    top: 2em;
-    right: 2em;
-    width: 2em;
-    height: 2em;
-    background-image: url('./images/venus.png');
-    background-size: cover;
-}
-.earth::before {
-    top: 3em;
-    right: 0em;
-    width: 5em;
-    height: 5em;
-    background-image: url('./images/earth.png');
-    background-size: cover;
-}
-.moon::before {
-    top: 0.8em;
-    right: 0.2em;
-    width: 1.2em;
-    height: 1.2em;
-    background-image: url('./images/moon.png');
-    background-size: cover;
-}
-.mars::before {
-    top: 5em;
-    right: 3em;
-    width: 3em;
-    height: 3em;
-    background-image: url('./images/mars.png');
-    background-size: cover;
-}
-.jupiter::before {
-    top: 6em;
-    right: 3em;
-    width: 5em;
-    height: 5em;
-    background-image: url('./images/jupiter.png');
-    background-size: cover;
-}
-.saturn::before {
-    top: 7.5em;
-    right: 5em;
-    width: 4.5em;
-    height: 4.5em;
-    background-image: url('./images/saturn.png');
-    background-size: cover;
-}
-.uranus::before {
-    top: 9em;
-    right: 6.5em;
-    width: 4em;
-    height: 4em;
-    background-image: url('./images/uranus.png');
-    background-size: cover;
-}
-.neptune::before {
-    top: 10em;
-    right: 8em;
-    width: 4em;
-    height: 4em;
-    background-image: url('./images/neptune.png');
-    background-size: cover;
-}
-.pluto::before {
-    top: 11em;
-    right: 10em;
-    width: 4em;
-    height: 4em;
-    background-image: url('./images/pluto.png');
-    background-size: cover;
-}
-
 .star {
     position: absolute;
     background-color: white;
     border-radius: 50%;
     z-index: -1;
-}
-
-@keyframes orbit {
-    to {
-        transform: rotate(360deg);
-    }
 }

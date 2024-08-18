@@ -11,7 +11,7 @@ body {
 .hero-section {
     position: relative; /* Positioning context for the overlay */
     height: 60vh; /* Set height of the hero section */
-    background-image: url("assets/image/nasa.jpg"); /* Background image */
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
     background-size: cover; /* Cover the entire section with the image */
     background-position: center; /* Center the image */
     display: flex; /* Flexbox layout for centering content */
@@ -29,7 +29,7 @@ body {
     display: flex; /* Flexbox layout for centering the description */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    /*background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     padding: 0 20px; /* Padding to avoid text touching the edges */
     box-sizing: border-box; /* Include padding in width/height calculations */
 }
