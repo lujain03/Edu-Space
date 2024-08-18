@@ -1,0 +1,128 @@
+/* Reset margins and paddings, set box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background gradient for the body */
+body {
+  background: linear-gradient(90deg, #403042, #394167); /* Gradient background */
+}
+
+/* Flexbox container for rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+/* Each column takes full width in small screens */
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+/* Main heading style */
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #dfd1e1;
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+
+/* Styling for image container */
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Ensure image fits within circle */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Card title style */
+.card h3 {
+  font-weight: 500;
+}
+
+/* Card paragraph style */
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+
+/* Icons container style */
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Icon links style */
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+
+/* Card hover effect */
+.card:hover {
+  background: linear-gradient(90deg, #863092, #4e92a3); 
+  color: #ffffff;
+}
+
+/* Image scale effect on card hover */
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+
+/* Responsive padding adjustments */
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 20%; /* Adjusted for 5 columns */
+    max-width: 20%; /* Adjusted for 5 columns */
+    padding: 0 1em;
+  }
+}

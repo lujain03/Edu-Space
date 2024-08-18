@@ -30,7 +30,7 @@
     height: 60px;
 }
 
-/* Chatbot container hidden initially */
+ /* Chatbot container hidden initially */
 #chatbot-container {
     width: 300px;
     height: 400px;
@@ -46,7 +46,7 @@
 }
 
 #chatbot-header {
-    background-color: #394167;
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
     padding: 10px;
     color: #FFF9C1;
     text-align: center;
@@ -89,7 +89,7 @@
 
 #chatbot-send {
     padding: 10px 20px;
-    background-color: #394167;
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
     color: FFF9C1;
     border: none;
     border-radius: 5px;

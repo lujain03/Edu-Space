@@ -1,0 +1,146 @@
+/* Importing Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Resetting default styles and setting global font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling the body with a gradient background */
+body {
+    background: linear-gradient(to bottom right, #494648, #2d282e, #3b363b, #5d4e64);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    padding-right: 100px;
+    align-items: center;
+    font-size: 16px;
+    background: url('gg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container for the signup form */
+.wrapper {
+    width: 90%; /* Responsive width */
+    max-width: 420px; /* Maximum width for larger screens */
+    background: rgba(255, 255, 255, 0.1); 
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(20px);
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-align: center; 
+    position: relative; /* Relative positioning for absolute children */
+    transition: height .6s ease;
+    overflow: hidden;
+    height: 520px; /* Adjusted height */
+}
+
+/* Register form box */
+.wrapper .form-box.register {
+    position: absolute; /* Position absolute for positioning */
+    top: 0; 
+    left: 0; /* Ensure registration form is within container */
+    transform: translateX(0); /* Move registration form into view */
+    width: 100%; /* Full width for responsiveness */
+    transition: transform 0.3s ease, width 0.3s ease; /* Smooth transitions for transform and width */
+    z-index: 2; /* Ensure signup form is on top */
+    padding: 30px 40px;
+}
+
+.wrapper p {
+    margin-bottom: 10px;
+}
+
+/* Styling for the main heading */
+.wrapper h1 {
+    font-size: 36px; 
+    margin: 20px;
+}
+
+/* Container for each input box */
+.wrapper .input-box {
+    position: relative;
+    margin-bottom: 10px; 
+}
+
+/* Styling for input fields */
+.input-box input {
+    width: 100%; /* Full width for responsiveness */
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* White border with transparency */
+    border-radius: 40px; /* Rounded corners */
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 38px 0 7px; /* Padding inside input */
+    overflow: hidden;
+    outline: none;
+}
+
+/* Styling for input placeholders */
+.input-box input::placeholder {
+    color: #ffffff;
+}
+
+/* Styling for icons inside input boxes */
+.input-box i {
+    position: absolute;
+    right: 16px;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Styling for the login button */
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    color: #ffffff;
+    border: none; 
+    outline: none; /* No outline */
+    border-radius: 40px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    background-color: #4e92a3;
+    color: #000000; 
+    margin-bottom: 15px; 
+}
+
+/* Styling for the login link at the bottom */
+.wrapper .login-link {
+    font-size: 14.5px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+/* Styling for the login link text */
+.login-link p a {
+    color: #ffffff;
+    text-decoration: none; 
+    font-weight: 600; 
+}
+
+.login-link p a:hover {
+    text-decoration: underline; 
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 100%; /* Adjusting width for smaller screens */
+    }
+}
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}

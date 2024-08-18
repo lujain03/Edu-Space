@@ -1,0 +1,94 @@
+/* Importing the 'Poppins' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global styles for all elements */
+* {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Set the default font to 'Poppins' */
+}
+
+/* Container that holds the form */
+.container {
+    min-height: 100vh; /* Make sure the container takes up at least the full height of the viewport */
+    background: url("gg.jpg") no-repeat center center/cover; /* Background image covering the container */
+    display: flex; /* Flexbox layout for centering content */
+    justify-content: right; /* Align items to the right horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* General padding */
+    padding-right: 90px; /* Increased padding on the right */
+}
+
+/* Styles for the form inside the container */
+.container form {
+    width: 90%; /* Form width as a percentage of its container */
+    max-width: 420px; /* Maximum width of the form */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+    backdrop-filter: blur(20px); /* Apply a blur effect to the background */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow around the form */
+    color: #ffffff; /* Set the text color to white */
+    position: relative; /* Relative positioning for absolute children */
+    transition: height 0.6s ease; /* Smooth transition for height changes */
+    overflow: hidden; /* Hide overflow content */
+    padding: 40px; /* Padding inside the form */
+}
+
+/* Styles for the form's heading */
+.container form h1 {
+    color: #ffffff; /* White text color */
+    font-weight: 600; /* Bold font weight */
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styles for input fields and textarea */
+.container form input, 
+.container form textarea {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Padding inside the fields */
+    margin-bottom: 20px; /* Space below the fields */
+    border: none; /* No border */
+    border-bottom: 2px solid #e0e0e0; /* Subtle bottom border */
+    background: transparent; /* Transparent background */
+    color: #e0e0e0; /* Light gray text color */
+    font-size: 16px; /* Font size */
+}
+
+/* Placeholder text color for input and textarea */
+.container form input::placeholder, 
+.container form textarea::placeholder {
+    color: #b0b0b0; /* Light gray color for placeholder text */
+}
+
+/* Specific styles for the textarea */
+.container form textarea {
+    resize: none; /* Disable resizing */
+    height: 100px; /* Fixed height */
+}
+
+/* Styles for the form's subheading */
+.container form h4 {
+    color: #e0e0e0; /* Light gray text color */
+    font-weight: 400; /* Normal font weight */
+    margin-bottom: 10px; /* Space below the subheading */
+}
+
+/* Styles for the submit button */
+.container form #button {
+    width: 100px; /* Fixed width */
+    padding: 10px; /* Padding inside the button */
+    background: #4e92a3; /* Background color for the button */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition for background color change */
+}
+
+/* Hover effect for the submit button */
+.container form #button:hover {
+    background: #863092; /* Darker blue background on hover */
+}

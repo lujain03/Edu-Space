@@ -1,0 +1,158 @@
+/* Body styling */
+body {
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
+    margin-top: 20px; /* Add margin to the top */
+}
+
+/* Container styling */
+.container {
+    background: transparent; /* Ensure the container doesn't override the body's background */
+    box-shadow: none; /* Remove box shadow to avoid any visual division */
+    padding: 20px; /* Add padding if necessary */
+}
+
+/* Heading styling */
+h4 {
+    color: #dfd1e1; /* Set color of h4 headings */
+}
+
+/* Card styling */
+.card {
+    background-clip: padding-box; /* Ensure background does not bleed into padding */
+    box-shadow: none; /* Remove box shadow for a cleaner look */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+}
+
+/* UI width styling */
+.ui-w-80 {
+    width: 80px !important; /* Force width to 80px */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Default button styling */
+.btn-default {
+    border-color: rgba(24, 28, 33, 0.1); /* Border color */
+    background: rgba(0, 0, 0, 0); /* Transparent background */
+    color: #4E5155; /* Text color */
+}
+
+/* Button label styling */
+label.btn {
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Outline primary button styling */
+.btn-outline-primary {
+    border-color: #4e92a3; /* Border color */
+    background: transparent; /* Transparent background */
+    color: #4e92a3; /* Text color */
+}
+
+/* General button styling */
+.btn {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Light text styling */
+.text-light {
+    color: #151616 !important; /* Set text color to a dark shade */
+}
+
+/* Row-bordered styling */
+.row-bordered {
+    overflow: hidden; /* Hide overflow to maintain layout */
+}
+
+/* Hidden file input styling */
+.account-settings-fileinput {
+    position: absolute; /* Absolute positioning */
+    visibility: hidden; /* Hide from view */
+    width: 1px; /* Minimal width */
+    height: 1px; /* Minimal height */
+    opacity: 0; /* Fully transparent */
+}
+
+/* Active list group item styling */
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important; /* Make active item bold */
+}
+
+/* Styling for active list items (non-dark style) */
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important; /* Transparent background */
+}
+
+/* Multiselect container styling */
+.account-settings-multiselect~.select2-container {
+    width: 100% !important; /* Full width */
+}
+
+/* Light style list group item styling */
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Add padding */
+    border-color: rgba(24, 28, 33, 0.03) !important; /* Border color */
+}
+
+/* Active list item color in light style */
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important; /* Set text color */
+}
+
+/* Material style list group item styling */
+.material-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Add padding */
+    border-color: rgba(24, 28, 33, 0.03) !important; /* Border color */
+}
+
+/* Active list item color in material style */
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important; /* Set text color */
+}
+
+/* Dark style list group item styling */
+.dark-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Add padding */
+    border-color: rgba(255, 255, 255, 0.03) !important; /* Border color */
+}
+
+/* Active list item color in dark style */
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important; /* Set text color */
+}
+
+/* Card body styling */
+.card-body {
+    background: transparent; /* Make card body background transparent */
+}
+
+/* List group item styling */
+.list-group-item {
+    background: transparent; /* Transparent background */
+    color: #ffffff; /* Ensure text is visible */
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #4e92a3; /* Background color */
+    border-color: #4e92a3; /* Border color */
+}
+
+/* Primary button hover styling */
+.btn-primary:hover {
+    background-color: #4e92a3; /* Darker background on hover */
+    border-color: #4e92a3; /* Darker border on hover */
+}
+
+/* Save button styling */
+.btn-save {
+    background-color: #4e92a3; /* Set background color */
+    border-color: #4e92a3; /* Set border color */
+    color: #dfd1e1; /* Set text color */
+}
+
+/* Cancel button styling */
+.btn-cancel {
+    background-color: #4e5155; /* Set background color to match the "Account settings" text color */
+    border-color: #4e5155; /* Set border color to match background */
+    color: #ffffff; /* Ensure text is visible */
+}

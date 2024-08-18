@@ -1,0 +1,227 @@
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Set the font for the entire page */
+    background-color: #121212; /* Dark background color for the page */
+    color: #fff; /* White text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for the hero section */
+.hero-section {
+    position: relative; /* Positioning context for the overlay */
+    height: 60vh; /* Set height of the hero section */
+    background-image: url("assets/image/nasa.jpg"); /* Background image */
+    background-size: cover; /* Cover the entire section with the image */
+    background-position: center; /* Center the image */
+    display: flex; /* Flexbox layout for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Overlay for the hero section */
+.overlay {
+    position: absolute; /* Absolute positioning within the hero section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover full width */
+    height: 100%; /* Cover full height */
+    display: flex; /* Flexbox layout for centering the description */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 0 20px; /* Padding to avoid text touching the edges */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+/* Styling for the description inside the overlay */
+.description {
+    max-width: 80%; /* Limit the width of the description */
+    padding: 20px; /* Padding around the text */
+    text-align: center; /* Center text alignment */
+    background: none; /* No background */
+    border-radius: 0; /* No border radius */
+    box-shadow: none; /* No box shadow */
+}
+
+/* Heading in the description */
+.description h1 {
+    font-size: 3em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    animation: fadeInUp 1.5s ease-in-out; /* Animation for fading in and moving up */
+}
+
+/* Paragraph in the description */
+.description p {
+    font-size: 1.5em; /* Slightly larger font size for the paragraph */
+    line-height: 1.6; /* Line height for readability */
+    animation: fadeInUp 2s ease-in-out; /* Animation for fading in and moving up */
+}
+
+/* Container styling for sections */
+.container {
+    display: flex; /* Flexbox layout for the container */
+    align-items: center; /* Center items vertically */
+    padding: 40px; /* Padding inside the container */
+    background-color: #1e1e1e; /* Dark background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin: 30px auto; /* Margin around the container */
+    width: 80%; /* Width of the container */
+    animation: fadeIn 2s ease-in-out; /* Animation for fading in */
+}
+
+/* Styling for the text section */
+.text-section {
+    flex: 1; /* Take up available space */
+    padding: 0 20px; /* Padding on the left and right */
+}
+
+/* Heading in the text section */
+.text-section h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2em; /* Font size for the heading */
+    animation: slideInLeft 1.5s ease-in-out; /* Animation for sliding in from the left */
+}
+
+/* Paragraph in the text section */
+.text-section p {
+    font-size: 1.2em; /* Font size for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+    animation: slideInLeft 2s ease-in-out; /* Animation for sliding in from the left */
+}
+
+/* Styling for the model section */
+.model-section {
+    flex: 1; /* Take up available space */
+    padding: 10px; /* Padding around the model */
+    display: flex; /* Flexbox layout for centering the model */
+    justify-content: center; /* Center the model horizontally */
+    align-items: center; /* Center the model vertically */
+    animation: slideInRight 2s ease-in-out; /* Animation for sliding in from the right */
+}
+
+/* Reverse layout for alternating sections */
+.reverse-layout {
+    flex-direction: row-reverse; /* Reverse the direction of flex items */
+}
+
+/* Animations for reverse layout */
+.reverse-layout .text-section h2,
+.reverse-layout .text-section p {
+    animation: slideInRight 1.5s ease-in-out; /* Animation for sliding in from the right */
+}
+
+.reverse-layout .model-section {
+    animation: slideInLeft 2s ease-in-out; /* Animation for sliding in from the left */
+}
+
+/* Styling for Spline viewer */
+spline-viewer {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    max-width: 500px; /* Maximum width of the model */
+    max-height: 500px; /* Maximum height of the model */
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Reduced padding */
+    }
+
+    .model-section {
+        max-width: 100%; /* Full width of the container */
+        max-height: 300px; /* Maximum height for smaller screens */
+    }
+
+    spline-viewer {
+        max-width: 100%; /* Full width of the container */
+        max-height: 300px; /* Maximum height for smaller screens */
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+    .hero-section {
+        height: 40vh; /* Reduced height for small screens */
+    }
+
+    .overlay {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .description {
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .description h1 {
+        font-size: 2em; /* Smaller font size for heading */
+    }
+
+    .description p {
+        font-size: 1em; /* Smaller font size for paragraph */
+    }
+
+    .container {
+        padding: 15px; /* Reduced padding */
+    }
+
+    .model-section {
+        max-height: 200px; /* Maximum height for very small screens */
+    }
+
+    spline-viewer {
+        max-width: 100%; /* Full width of the container */
+        max-height: 200px; /* Maximum height for very small screens */
+    }
+}
+
+/* Keyframes for animations */
+
+/* Fade in and move up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide in from the left animation */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide in from the right animation */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
