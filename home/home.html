@@ -7,24 +7,26 @@
     <title>Profile</title>
     <link rel="stylesheet" href="home.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
 </head>
 <body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
     <div class="hero">
         <nav>
-            <a href="profile.html"><img src="logo.png" class="logo" alt="Website Logo">
-            </a>
-
+            <a href="profile.html"><img src="logo.png" class="logo" alt="Website Logo"></a>
             <ul>
                 <li><a href="profile.html">Home</a></li>
                 <li><a href="#">Features</a></li> 
                 <li><a href="#">About</a></li>
-                <li><a href="login signup page/form.html" >Login/Signup</a></li>
+                <li><a href="login signup page/form.html">Login/Signup</a></li>
             </ul>
             <img src="images/profile_user.png" class="user-pic" alt="Profile Picture" onclick="toggleMenu()" aria-expanded="false">
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
-                  
                     <a href="/profilepage/profilepage.html" target="_blank" class="sub-menu-link">
                         <i class='bx bxs-user'></i>           
                         <p>Account settings</p>
@@ -37,11 +39,7 @@
             <spline-viewer url="https://prod.spline.design/k8juEQ11TwGW10oA/scene.splinecode"></spline-viewer>
         </div>
     </div>
-    <div class="scroll-container">
-        <iframe src="/slider/slider.html" class="slider-iframe" frameborder="0"></iframe>
-    </div>
 
     <script src="home.js"></script>
-
 </body>
 </html>

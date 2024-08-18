@@ -1,0 +1,135 @@
+/* Global styles for margin, padding, and font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Font styling */
+}
+
+/* Container styling */
+.container {
+    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 0; /* Padding around the container */
+}
+
+/* Main heading styling */
+.container h1 {
+    text-align: center; 
+    color: #fff; 
+    margin-bottom: 40px; /* Space below the heading */
+    font-size: 32px; /* Font size for professionalism */
+    line-height: 1.2; /* Line height for better readability */
+}
+
+/* Flex container for pricing plans */
+.price-row {
+    display: flex;
+    align-items: stretch; /* Stretch boxes to be the same height */
+    justify-content: center; /* Center boxes horizontally */
+    flex-wrap: wrap; 
+}
+
+/* Styling for individual pricing boxes */
+.box {
+    margin: 12px; /* Margin around each box */
+    text-align: center; 
+    background: linear-gradient(90deg, #c651d5, #5170ff); 
+    color: #fff; 
+    border-radius: 17px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    flex: 1; /* Flex grow to take up available space */
+    max-width: 300px; 
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out content */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+/* Hover effect for boxes */
+.box:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Styling for plan titles */
+.box h2 {
+    margin: 0 0 20px; /* Margin below the title */
+    font-size: 20px; /* Font size for the title */
+}
+
+/* Styling for plan prices */
+.box h1 {
+    font-size: 28px; /* Font size for the price */
+    margin: 10px 0; /* Margin above and below the price */
+}
+
+/* Styling for the feature list */
+.box ul {
+    list-style: none; 
+    color: #ddd; /* Light gray text color */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; 
+    text-align: left; /* Align text to the left */
+    padding-left: 30px; /* Padding on the left for list items */
+    line-height: 1.6; 
+}
+
+/* Styling for list items */
+.box ul li {
+    padding: 10px 0; /* Padding around each item */
+    display: flex; /* Flex layout for items */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    font-size: 16px; /* Font size for list items */
+}
+
+/* Styling for list item bullets */
+.box ul li::before {
+    content: ''; /* Empty content for custom bullets */
+    width: 20px; /* Width of the bullet */
+    height: 20px; /* Height of the bullet */
+    margin-right: 10px; /* Space between bullet and text */
+    display: inline-block; /* Inline-block display */
+}
+
+/* Container for buttons */
+.box .btn-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Space above buttons */
+}
+
+/* Styling for buttons */
+.box .btn {
+    font-size: 16px; /* Font size for button text */
+    border: 2px solid #403042; /* Border color */
+    padding: 15px 30px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    background-color: #fff; 
+    color: #403042; 
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
+    margin: 0 5px; /* Space between buttons */
+    width: 100%; /* Full width of the button */
+    max-width: 150px; 
+}
+
+/* Hover effect for buttons */
+.box .btn:hover {
+    background-color: #403042; 
+    color: #fff;
+}
+
+/* Styling for price duration */
+.box span {
+    font-size: 16px; /* Font size for the duration */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1000px) {
+    .box {
+        margin: 12px; /* Adjust margin for smaller screens */
+    }
+}
