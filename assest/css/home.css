@@ -9,34 +9,40 @@
     outline: none;
     font-family: 'Poppins', sans-serif;
 }
-/* Circle button to trigger the chat */
 #chatbot-launcher {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     width: 60px;
     height: 60px;
-    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
-    border-radius: 50%;
+   
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        /* other styles */
 }
 
 #chatbot-icon {
-    width: 60px;
-    height: 60px;
+    width: 160px;
+    height: 160px;
 }
+#chatbot-label {
+    position: absolute;
+    bottom: 5px; /* Adjust position as needed */
+    right: 80px; /* Adjust position as needed */
+    font-size: 12px; /* Adjust font size as needed */
+    color: #FFF9C1; /* Adjust color as needed */
+
+  }
 
  /* Chatbot container hidden initially */
 #chatbot-container {
     width: 300px;
     height: 400px;
     position: fixed;
-    bottom: 90px; /* Adjusted to fit above the button */
-    right: 20px;
+    bottom: 140px; /* Adjusted to fit above the button */
+    right: 30px;
     background-color: #FFF9C1;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -46,7 +52,7 @@
 }
 
 #chatbot-header {
-    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
+    background:  #4e92a3; /* Gradient background for the container */
     padding: 10px;
     color: #FFF9C1;
     text-align: center;
@@ -89,8 +95,9 @@
 
 #chatbot-send {
     padding: 10px 20px;
-    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
+    background:  #4e92a3; /* Gradient background for the container */
     color: FFF9C1;
+    color: #FFF9C1;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -151,38 +158,7 @@ nav a.active {
     border-bottom: 3px solid #FFF9C1;
 }
 
-@media(max-width:995px) {
-    nav {
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #FFF9C1;
-        border-bottom: 3px solid #FFF9C1;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
-        background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
-    }
 
-    nav.active {
-        display: block;
-    }
-
-    nav a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #FFF9C1;
-    }
-}
 
 section {
     min-height: 100vh;
@@ -227,19 +203,6 @@ span {
     font-size: 2.6rem;
 }
 
-.home-img img {
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #FFF9C1;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.home-img img:hover {
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
 
 
 
@@ -262,7 +225,7 @@ span {
 .btn:hover {
     transform: scale3d(1.03);
     background-color: #FFF9C1;
-    background: linear-gradient(90deg, #403042, #394167); /* Gradient background for the container */
+    background:  #4e92a3; /* Gradient background for the container */
     box-shadow: 0 0 25px #FFF9C1;
 }
 
@@ -277,7 +240,7 @@ span {
 }
 
 .typing-text span::before {
-    content: "Interactive ";
+    content: "interactivity ";
     color: #FFF9C1;
     animation: words 20s infinite;
 }
@@ -308,16 +271,12 @@ span {
         content: "3d Designs";
     }
     61%, 80% {
-        content: "Virtual reality";
+        content: "Virtual Reality";
     }
    
 }
 
-@media (max-width: 1000px) {
-    .home {
-        gap: 4rem;
-    }
-}
+
 /* Dropdown Styles */
 .dropdown {
     position: relative;
@@ -629,6 +588,85 @@ span {
         margin: 4px;
     }
 }
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+
+  
+
+  .features-content {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    gap: 20px; /* Adjust gap between cards */
+  }
+
+  .feature-card {
+    width: 100%; /* Make cards full width on small screens */
+  }
+
+  
+
+  .footerContainer {
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .socialIcons a {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .footerNav ul li {
+    margin: 15px;
+  }
+
+  .emailSubscription input[type="email"] {
+    width: 100%;
+    max-width: 100%; /* Make input field full width on small screens */
+  }
+
+  .emailSubscription button {
+    width: 100%; /* Make button full width on small screens */
+  }}
+  @media screen and (max-width: 768px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    .logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+  }
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5%;
+        top: 200px;
+    }
+
+    .home .home-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2rem;
+
+    }
+
+    /* Adjust position of the "Created with..." text */
+   
+
+    .home .home-content p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+  
+  
 
 .star {
     position: absolute;

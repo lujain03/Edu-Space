@@ -13,10 +13,11 @@
     padding: 50px 0; /* Padding around the container */
 }
 
+
 /* Main heading styling */
 .container h1 {
     text-align: center; 
-    color: #dfd1e1; 
+    color: #FFF9C1; 
     margin-bottom: 40px; /* Space below the heading */
     font-size: 32px; /* Font size for professionalism */
     line-height: 1.2; /* Line height for better readability */
@@ -34,8 +35,8 @@
 .box {
     margin: 12px; /* Margin around each box */
     text-align: center; 
-    background: linear-gradient(90deg, #88788a, #767c96); /* Gradient background for the container */
-    color: #fff; 
+    background: linear-gradient(90deg, #4E92A3, #FFF9C1); /* Gradient background for the container */
+    color: #353434; 
     border-radius: 17px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
@@ -68,7 +69,7 @@
 /* Styling for the feature list */
 .box ul {
     list-style: none; 
-    color: #ddd; /* Light gray text color */
+    color: #333333; /* Light gray text color */
     padding: 0; /* Remove padding */
     margin: 20px 0; 
     text-align: left; /* Align text to the left */
@@ -104,11 +105,11 @@
 /* Styling for buttons */
 .box .btn {
     font-size: 16px; /* Font size for button text */
-    border: 2px solid #403042; /* Border color */
+    border: 2px solid #333333; /* Border color */
     padding: 15px 30px; /* Padding inside the button */
     border-radius: 20px; /* Rounded corners for the button */
-    background-color: #fff; 
-    color: #403042; 
+    background-color: #FFF9C1; 
+    color: #333333; 
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
     margin: 0 5px; /* Space between buttons */
@@ -118,7 +119,7 @@
 
 /* Hover effect for buttons */
 .box .btn:hover {
-    background-color: #403042; 
+    background-color: #333333; 
     color: #fff;
 }
 

@@ -38,3 +38,10 @@ document.write(`
     .bot-message { text-align: left; margin: 5px 0; }
 </style>
 `);
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('nav');
+
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    navToggle.classList.toggle('active');
+});

@@ -46,8 +46,8 @@ h1 {
 
 /* Styling for image container */
 .card .img-container {
-  width: 8em;
-  height: 8em;
+  width: 9em;
+  height: 9em;
   background-color: #a993ff;
   padding: 0.5em;
   border-radius: 50%;
@@ -97,7 +97,7 @@ h1 {
 
 /* Card hover effect */
 .card:hover {
-  background: linear-gradient(90deg, #863092, #4e92a3); 
+  background: linear-gradient(90deg, #FFF9C1, #4e92a3); 
   color: #ffffff;
 }
 
