@@ -1,179 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Background styling */
 body {
-    background: linear-gradient(90deg, #403042, #394167); /* Gradient background */
-    color: #fff;
-    min-height: 100vh;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #403042, #394167);
+    color: white;
 }
 
-/* Sidebar styling */
-.sidebar {
-    position: fixed;
-    width: 280px;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
-    left: -280px; /* Start off-screen */
-    transition: left 0.3s ease; /* Smooth transition for slide effect */
-    z-index: 1000; /* Ensure it's on top */
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
 }
 
-.sidebar .sidebar_menu {
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Slightly lighter overlay */
-    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
-    overflow: hidden;
-    padding-top: 60px; /* Adjusted for logo space */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-.sidebar .sidebar_menu .logo {
+/* Navbar Styles */
+nav.main_box {
+    position: relative;
+    background-size: cover;
     width: 100%;
-    height: 60px;
-    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
-}
-
-.sidebar .sidebar_menu .logo a {
-    color: #fff;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 60px;
-    text-decoration: none;
     padding-left: 20px;
 }
 
-.sidebar .sidebar_menu .menu {
-    padding: 20px;
+nav.main_box .btn_one {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.sidebar .sidebar_menu .menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar .sidebar_menu .menu li {
-    margin-top: 6px;
-    padding: 14px 20px;
-}
-
-.sidebar .sidebar_menu .menu i {
+nav.main_box .btn_one i {
     color: #fff;
-    font-size: 20px;
-    padding-right: 8px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
 }
 
-.sidebar .sidebar_menu .menu a {
+nav.main_box .menu-icon-text a {
     color: #fff;
+    margin-left: 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
-.sidebar .sidebar_menu .menu li:hover {
+/* Sidebar Menu Styles */
+nav.main_box .sidebar_menu {
+    position: fixed;
+    height: auto;
+    width: 200px;
+    left: -200px;
+    top: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .menu {
+    padding: 10px 0;
+}
+
+.sidebar_menu .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar_menu .menu li {
+    padding: 10px 20px;
+    position: relative;
+}
+
+.sidebar_menu .menu i {
+    color: #fff;
+    font-size: 18px;
+    padding-right: 8px;
+}
+
+.sidebar_menu .menu a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sidebar_menu .menu li:hover {
     border-left: 1px solid #fff;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
-.sidebar .sidebar_menu .social_media {
+.sidebar_menu .menu ul.dropdown {
+    display: none;
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    top: 0;
+    left: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
 }
 
-.sidebar .sidebar_menu .social_media ul {
-    display: flex;
-    justify-content: center;
+.sidebar_menu .menu li:hover > ul.dropdown {
+    display: block;
 }
 
-.sidebar .sidebar_menu .social_media a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    margin: 0 5px;
-}
-
-.sidebar .sidebar_menu .social_media a:hover {
-    opacity: 1;
-    transition: all 0.2s linear;
-    transform: scale(1.01);
-}
-
-.sidebar #check {
+#check {
     display: none;
 }
 
-.sidebar .btn_one {
-    position: absolute;
-    left: 16px;
-    top: 20px;
-}
-
-.sidebar .btn_one i {
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.sidebar .btn_two {
-    position: absolute;
-    left: 240px;
-    top: 20px;
-}
-
-.sidebar .btn_two i {
-    font-size: 25px;
-    cursor: pointer;
-}
-
-#check:checked ~ .sidebar {
-    left: 0; /* Slide in */
-}
-
-/* Main content styling */
-main {
-    margin-left: 280px; /* Leave space for the sidebar */
-    padding: 20px;
-    width: calc(100% - 280px); /* Full width minus sidebar */
-    overflow-y: auto; /* Allow vertical scrolling if content overflows */
-}
-
-/* Video Grid */
-.video-item {
-    position: relative;
-    cursor: pointer;
-}
-
-.video-item img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.video-info {
-    position: absolute;
-    bottom: 0;
+#check:checked ~ .sidebar_menu {
     left: 0;
+}
+
+#check:checked ~ nav.main_box .btn_one i {
+    opacity: 0;
+}
+
+/* Welcome Message Styles */
+.welcome {
+    text-align: center;
+    margin: 80px 0;
+}
+
+/* Video Courses Styles */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.video-box {
+    width: 240px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.video-box img {
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 10px;
 }
 
-.video-info h5, .video-info p {
-    margin: 0;
+.video-box h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-align: center;
 }
 
-/* Header styling */
-header {
-    position: static;
+.video-box:hover {
+    transform: scale(1.05);
+}
+
+/* Video Player Styles */
+.video-player {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+video {
+    width: 80%;
+    border-radius: 10px;
 }
