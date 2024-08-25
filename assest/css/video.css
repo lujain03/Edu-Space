@@ -164,3 +164,9 @@ video {
     width: 80%;
     border-radius: 10px;
 }
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}

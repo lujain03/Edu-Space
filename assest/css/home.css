@@ -332,12 +332,9 @@ span {
    
     
 }.divider {
-    width: 100%;
-    border: 10px solid rgb(255, 249, 193);
-    border-radius: 5px;
-    opacity: 0.5;
-    margin-bottom: 70px;
-    
+    margin: 3rem 0;
+    border: 0;
+    border-top: 2px solid #FFF9C1;
 }
 
   
