@@ -18,7 +18,7 @@ document.getElementById("chatbot-send").addEventListener("click", function() {
         document.getElementById("chatbot-text").value = "";
         // Simulate a bot response for now
         setTimeout(() => {
-            addMessage("bot", "This is a response from EduBot! How can I assist you?");
+            addMessage("bot", "This is a response from Neptune! How can I assist you?");
         }, 1000);
     }
 });
@@ -31,17 +31,3 @@ function addMessage(sender, text) {
     messages.appendChild(messageElem);
     messages.scrollTop = messages.scrollHeight;
 }
-
-document.write(`
-<style>
-    .user-message { text-align: right; margin: 5px 0; }
-    .bot-message { text-align: left; margin: 5px 0; }
-</style>
-`);
-const navToggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('nav');
-
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    navToggle.classList.toggle('active');
-});
